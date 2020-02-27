@@ -1,0 +1,71 @@
+/* header balkje */
+ul {
+    list-style-type: none;
+      margin: 0;
+       padding: 0;
+        overflow: hidden;
+         background-color: #C0C0C0 ;
+            border-radius: 15px 50px;
+ }
+ 
+ li {
+   float: left;
+ }
+ 
+ li a {
+   display: inline-block;
+    color: #ff6666;
+     text-align: center;
+      padding:18px 14px;
+ 
+ }
+ 
+ li a:hover {
+   background-color:  #F5F5F5;
+ }
+ .navbar{
+        font-family: sans-serif;
+     display:inline;
+     float:left;
+    }
+ 
+   }
+ }
+ 
+ .fullbackground{
+ 
+  display: block;
+    margin-left: auto;
+     margin-right: 10%;
+      width: 40%;
+       margin-top: -4.3%
+ 
+ 
+ 
+    }
+
+    h4 {
+        text-align: center;
+        text-decoration: underline overline;
+        color: darkorchid;
+
+    }
+    body{
+        padding:0;
+        margin:0;
+        background-image:url(background.jpg);
+        background-size: auto;
+        background-position: center;
+        background-repeat:;
+        }
+        .fullbackground{
+
+            display: block;
+              margin-left: auto;
+               margin-right: 10%;
+                width: 40%;
+                 margin-top: -4.3%
+           
+           
+           
+              }

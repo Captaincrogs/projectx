@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="temperature.css">
+
+  </head>
+  <header>
+    <img src="projectx.png" alt="projectx.png" width="380"
+    height="120" class="center">
+
+    <div class="navbar">
+    <ul>
+      <li><a class="active" href="mijnwebsite.html">Home</a></li>
+      <li><a href="temperature.html" target="_blank">
+    View Temperature</a></li>
+      <!-- <li><a href="Current.html">Current</a></li> -->
+      <li><a href="Registreer.html"  target="_blank">Registreer</a></li>
+    <li><a href="log in">Log in</a></li>
+    <li><a href="log uit">Log uit</a> </a></li>
+<li><a href="ThingSpeakMultichannel.html" target="_blank" >View All Data </a> </a></li>
+
+  </ul>
+</div>
+  </header>
+  <body>
+
+    <div class="text">
+
+      <iframe width="450" height="260" class="iframe" style="border: 5px solid #dfdfdf;" src="https://thingspeak.com/channels/968878/charts/2?bgcolor=%230d0d00&color=%23a6a6a6%09&dynamic=true&results=60&timescale=10&type=spline"></iframe>
+      <iframe width="450" height="260" class="iframe" style="border: 5px solid #dfdfdf;" src="https://thingspeak.com/channels/968878/charts/1?bgcolor=%230d0d0d&color=%23d62020&dynamic=true&results=60&timescale=10&type=step"></iframe>
+
+      <div class="jumbotron jumbo">
+      	<h2>Get Current Weather Information</h2>
+      </div>
+      <div class="container">
+      	<div class="row">
+      		<div class="col-md-12">
+      			<h3 class="text-center text-primary">Enter City Name:</h3>
+      			<div id="error"></div>
+      		</div>
+      		<div class="row form-group form-inline" id="city">
+      			<input type="text" name="cityname" id="cityname" class="form-control" placeholder="Enter city name" value="amsterdam"></input>
+      			<button id="submitCity" class="btn btn-primary" onclick="getWeather(document.getElementById('cityname').value);">Search City</button>
+      		</div>
+              <div id="weather-data">
+
+      	    </div>
+      	</div>
+      </div>
+      <!--Jquery-->
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+      <!--bootstarp javascript-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="myscript.js"></script>
+
+    </div>
+  </body>
+  <main>
+    <iframe width="450" height="260" style="border: 4px solid #0c0c0c;" src="https://thingspeak.com/channels/143789/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Amsterdam&type=line&yaxis=Temperature"></iframe>
+
+
+  </main>
+  <footer>
+
+
+    <section class="cf team-container">
+        <h1 class="team-h1">Ons Team</h1>
+
+          <!-- team0-->
+          <div class="team-member">
+            <img class="team-photo" src="anon.jpg">
+            <h3>Izdine Amadou</h3>
+            <span>Project manager</span>
+            <a class="email" href="mailto:i.amadou@student.bit-academy.nl"><span >email</span></a>
+          </div>
+
+          <!-- team1-->
+    <div class="team-member">
+        <img class="team-photo" src="anon.jpg">
+          <h3>Aimane Chouhaiba</h3>
+          <span>co founder</span>
+           <a class="email" href="mailto:a.chouhaiba@student.bit-academy.nl"><span >email</span></a>
+        </div>
+     <!-- team2-->
+    <div class="team-member">
+        <img class="team-photo" src="anon.jpg">
+          <h3>Kenza Bennani-Meziane</h3>
+          <span>Web Engineer</span>
+           <a class="email" href="mailto:k.bennani-meziane@student.bit-academy.nl"><span >email</span></a>
+        </div>
+
+
+  </footer>
+</html>

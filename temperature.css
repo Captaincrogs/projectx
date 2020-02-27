@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400% 400%;
+    animation: bganimation 23s infinite;
+  }
+  .text{
+    color: white;
+    text-align: center;
+      margin: 350px 0;
+      left: 29px
+  }
+
+  @keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+
+  h1.team-h1 {
+    margin: 0;
+    position: absolute;
+    top: -16px;
+    text-align: center;
+    left: 40%;
+    font-family: georgia;
+    font-style: italic;
+    background-color: white;
+    padding: 0px 20px;
+    color: #222;
+  }
+
+  .cf:before,
+  .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  .cf:after {
+      clear: both;
+  }
+
+  /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  .cf {
+      *zoom: 1;
+  }
+
+  .team-container {
+    max-width: 1000px;
+    margin: auto;
+    border-top: 1px #e9e9e9 solid;
+    border-bottom: 1px #e9e9e9 solid;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-top: 3em;
+    position: relative;
+  }
+
+  .team-member {
+    width: 16%;
+    float: left;
+    text-align: center;
+    margin-right: 25%;
+  }
+
+  .team-member:last-child {margin-right: 0;}
+
+
+  .team-member span,
+  .team-member h3 {
+    max-width: 200px;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+  }
+
+  .team-member h3 {
+    color: rgb(139, 64, 64);
+  }
+
+  .email {
+    color: whitesmoke;
+
+  }
+
+  .team-member span {
+    display: block;
+
+  }
+  .team-photo {
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    transition: 0.1s transform ease-in-out;
+  }
+
+
+  .team-photo:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+
+  /* code voor telefoon layout */
+  @media (max-width:850px){
+    .team-member {
+      width:25%;
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-bottom: 40px;
+
+    }
+
+  }
+
+
+
+  @media (max-width:650px){
+    .team-member {
+      float: none;
+      display: block;
+      margin: 50px auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .team-member h3,
+    .team-member span {
+      margin: 15px auto;
+    }
+  }
+
+#weatherInfo{
+
+    text-align: center;
+    position: relative;
+}
+
+main{
+
+    text-align: center;
+    position: relative;
+    margin-bottom: 20%;
+}
+
+.h1{
+    text-align: center;
+}
+ul {
+   list-style-type: none;
+     margin: 0;
+      padding: 0;
+       overflow: hidden;
+        background-color: #C0C0C0 ;
+           border-radius: 15px 50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+   color: #ff6666;
+    text-align: center;
+     padding:18px 14px;
+
+}
+
+li a:hover {
+  background-color:  #F5F5F5;
+}
+.navbar{
+   	font-family: "Times New Roman", Times, serif;
+    display:inline;
+    float:left;
+   }
+
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

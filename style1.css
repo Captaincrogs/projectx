@@ -1,0 +1,42 @@
+.lettertype{
+   	font-family: cursive;
+    display:inline;
+    float:left;
+   }
+ul {
+   list-style-type: none;
+     margin: 0;
+      padding: 0;
+       overflow: hidden;
+        background-color: #001f3f ;
+           border-radius: 15px ;
+            opacity: 0.9;
+
+}
+
+li {
+  float: top;
+}
+
+li a {
+  display: inline-block;
+   color:#3D9970 ;
+    text-align: center;
+     padding:18px 14px;
+
+}
+
+li a:hover {
+  background-color:  #F5F5F5;
+}
+
+
+
+body{
+padding:0;
+margin:0;
+background-image:url(background.jpg);
+background-size: cover;
+background-position: center;
+}
+
